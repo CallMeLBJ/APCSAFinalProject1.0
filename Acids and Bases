@@ -1,9 +1,5 @@
 public class AcidsAndBases extends Chemistry
 {
-public static void main(String [] args)
-     { 
-      
-    
-     }
+
 }
 
