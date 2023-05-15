@@ -1,46 +1,5 @@
-import java.util.Scanner; 
 public class Stoichiometry extends Chemistry
-  {
-  public static void main(String[] args) 
-    // Tell the user to enter a question
-    {Scanner scan = new Scanner(System.in);
-    System.out.println("Welcome to the Magic 8 Ball!");
-    System.out.print("Enter your question and I will answer it: ");
-    String question = scan.nextLine();
-    int num =((int) (Math.random() * 8)+1);
-    if (num==1)
-    {
-        System.out.println("Never");
-    }
-    if (num==2)
-    {
-        System.out.println("No silly!");
-    }
-    if (num==3)
-    {
-        System.out.println("Yes Goofy!");
-    }
-    if (num==4)
-    {
-        System.out.println("Mhm honey bunz!");
-    }
-    if (num==5)
-    {
-        System.out.println("Maybe");
-    }
-    if (num==6)
-    {
-        System.out.println("Are you serious neow");
-    }
-    if (num==7)
-    {
-        System.out.println("Nah you a goofy ah goober");
-    }
-    if (num==8)
-    {
-        System.out.println("CAN WE GET MUCH HIGHER!! SO HIGHH!!!~(OooOOooOO)");
-   }
-}   
+{
 
 }
 
