@@ -1,1 +1,12 @@
-
+import java.util.*;
+public class Solutions extends Chemistry
+{
+    public static void main(String[] args){
+    ArrayList<String> toDo = new ArrayList<String>();
+    toDo.add(new String("Homework"));
+    toDo.add(0, new String("Work"));
+    System.out.println(toDo);
+    
+    }
+    
+}
