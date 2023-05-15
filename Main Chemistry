@@ -1,0 +1,6 @@
+public class Chemistry{
+    private String subject;
+    public Chemistry(){
+        subject = "Chemistry";
+    }
+}
