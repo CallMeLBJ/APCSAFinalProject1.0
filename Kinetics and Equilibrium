@@ -1,23 +1,4 @@
 public class KineticsEquilibrium extends Chemistry
 {
-    public static void main(String [] args)
-    {    
-    int[] lockers = new int[100];
-        for(int j= 1; j<=100; j++) 
-        {
-            for(int k= j;k<100; k+=j)
-            {
-                if(lockers[j]==0){
-                    lockers[j]=1;
-                }
-                else{
-                    lockers[j]=0;
-                }
-            }
-        }
-        lockers[0]=1;
-        for(int l=0; l<100; l++){
-           System.out.println(lockers[l]);
-        }
-    }
+
 }
