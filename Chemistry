@@ -3,4 +3,32 @@ public class Chemistry{
     public Chemistry(){
         subject = "Chemistry";
     }
+    public void printChemQuestions(String question, String answer, String wrongOne, String wrongTwo, String wrongThree){
+        System.out.println(question);
+        int numsged = (int)(Math.random()*4)+1;
+        if(numsged==1){
+            System.out.println("1) " + answer);
+            System.out.println("2) " + wrongTwo);
+            System.out.println("3) " + wrongOne);
+            System.out.println("4) " + wrongThree);
+        }
+        else if(numsged==2){
+            System.out.println("1) " + wrongThree);
+            System.out.println("2) " + answer);
+            System.out.println("3) " + wrongTwo);
+            System.out.println("4) " + wrongOne);
+        }
+        else if(numsged==3){
+            System.out.println("1) " + wrongTwo);
+            System.out.println("2) " + wrongOne);
+            System.out.println("3) " + answer);
+            System.out.println("4) " + wrongThree);
+        }
+        else{
+            System.out.println("1) " + wrongOne);
+            System.out.println("2) " + wrongTwo);
+            System.out.println("3) " + wrongThree);
+            System.out.println("4) " + answer);
+        }
+    }
 }
