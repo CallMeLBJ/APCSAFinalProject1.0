@@ -1,5 +1,18 @@
 public class MatterAndEnergy extends Chemistry
 {
-  
+    public MatterAndEnergy(){
+        super();
+    }
+    public void makeQuestion(){
+        int rando = (int)(Math.random()*3);
+        if(rando==0){
+            this.printChemQuestions("The formula H2 represents one of what?", "molecule", "atom","liter","gram");
+        }
+        if(rando==1){
+            this.printChemQuestions("The normal boiling point of water is what?","373 kelvin","0 kelvin","273 kelvin","149 kelvin");
+        }
+        if(rando==2){
+            this.printChemQuestions("What change of phase represents sublimation?", "solid to gas","liquid to gas","liquid to solid","solid to liquid");
+        }
+    }
 }
-
