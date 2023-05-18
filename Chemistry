@@ -1,9 +1,11 @@
+import java.util.*;
 public class Chemistry{
     private String subject;
     public Chemistry(){
         subject = "Chemistry";
     }
     public void printChemQuestions(String question, String answer, String wrongOne, String wrongTwo, String wrongThree){
+        Scanner console = new Scanner(System.in);
         System.out.println(question);
         int numsged = (int)(Math.random()*4)+1;
         if(numsged==1){
@@ -11,24 +13,56 @@ public class Chemistry{
             System.out.println("2) " + wrongTwo);
             System.out.println("3) " + wrongOne);
             System.out.println("4) " + wrongThree);
+            System.out.println("Enter the number you think is correct");
+            int numero = console.nextInt();
+            if(numero==1){
+                System.out.println("You got it correct!");
+            }
+            else{
+                System.out.println("You got it wrong");
+            }
         }
         else if(numsged==2){
             System.out.println("1) " + wrongThree);
             System.out.println("2) " + answer);
             System.out.println("3) " + wrongTwo);
             System.out.println("4) " + wrongOne);
+            System.out.println("Enter the number you think is correct");
+            int numero1 = console.nextInt();
+            if(numero1==2){
+                System.out.println("You got it correct!");
+            }
+            else{
+                System.out.println("You got it wrong");
+            }
         }
         else if(numsged==3){
             System.out.println("1) " + wrongTwo);
             System.out.println("2) " + wrongOne);
             System.out.println("3) " + answer);
             System.out.println("4) " + wrongThree);
+            System.out.println("Enter the number you think is correct");
+           int numero2 = console.nextInt();
+            if(numero2==3){
+                System.out.println("You got it correct!");
+            }
+            else{
+                System.out.println("You got it wrong");
+            }
         }
         else{
             System.out.println("1) " + wrongOne);
             System.out.println("2) " + wrongTwo);
             System.out.println("3) " + wrongThree);
             System.out.println("4) " + answer);
+            System.out.println("Enter the number you think is correct");
+            int numero3 = console.nextInt();
+            if(numero3==4){
+                System.out.println("You got it correct!");
+            }
+            else{
+                System.out.println("You got it wrong");
+            }
         }
     }
 }
