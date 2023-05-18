@@ -1,1 +1,50 @@
-
+import java.util.*;
+public class ChemistryRunner{
+    public static void main (String[] args){
+        boolean what = true;
+        while(what){   
+            System.out.println("Do you want to study for chemstry? Enter 0 for no, 1 for yes");
+            Scanner console = new Scanner(System.in);
+            int num = console.nextInt();
+            if(num==0){
+                return;
+            }
+            System.out.println("What unit do you want to study?");
+            System.out.println("0 - Matter and Energy");
+            System.out.println("1 - Atomic Concepts");
+            System.out.println("2 - The Periodic Table");
+            System.out.println("3 - Nuclear Chemistry");
+            System.out.println("4 - Chemical Bonds");
+            System.out.println("5 - Stoichiometry");
+            System.out.println("6 - Solutions");
+            System.out.println("7 - Kinetics and Equilibrium");
+            System.out.println("8 - Acids and Bases");
+            System.out.println("9 - ReDox");
+            System.out.println("10 - Organic Chemistry");
+            int num0 = console.nextInt();
+            if(num==0){
+                
+            }
+            if(num==1){
+            }
+            if(num==2){
+            }
+            if(num==3){
+            }
+            if(num==4){
+            }
+            if(num==5){
+            }
+            if(num==6){
+            }
+            if(num==7){
+            }
+            if(num==8){
+            }
+            if(num==9){
+            }
+            if(num==10){
+            }
+        }
+    }
+}
