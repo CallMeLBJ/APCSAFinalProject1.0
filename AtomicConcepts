@@ -1,6 +1,18 @@
-public class AtmoicConcepts extends Chemistry
+public class AtomicConcepts extends Chemistry
 {
-
+    public AtomicConcepts(){
+        super();
+    }
+    public void makeQuestion(){
+        int rando = (int)(Math.random()*3);
+        if(rando==0){
+            this.printChemQuestions("The atoms in a sample of an element must contain nuclei with the same number of what?","protons","electrons","neutrons","nucleons");
+        }
+        if(rando==1){
+            this.printChemQuestions("What is the most probable location of an electron?","an orbital","a sublevel","a nucleus","a principal energy level");
+        }
+        if(rando==2){
+            this.printChemQuestions("Which of these phrases best describes an atom?","a postive nucleus surrounded by a cloud of negative charges","a positive nucleus surrounded by a hard negative shell","a hard sphere with positive particles uniformly embedded","a hard sphere with negative particles uniformly embedded");
+        }
+    }
 }
-    
-
