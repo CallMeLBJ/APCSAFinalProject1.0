@@ -1,0 +1,18 @@
+public class Redox extends Chemistry
+{
+  public Redox(){
+        super();
+    }
+    public void makeQuestion(){
+        int rando = (int)(Math.random()*3);
+        if(rando==0){
+              this.printChemQuestions("A redox reaction always involves" , "A change in oxidation number", "a change in phase","the transfer of protons","a change in electrons");
+     }
+        if(rando==1){
+           this.printChemQuestions("Which type of reaction in a battery produces electrical energy?","redox","neutralization ","decompisition","hydrolysis");
+     }
+        if(rando==2){
+          this.printChemQuestions("For a redox reaction to occur, there must be a transfer of", "electrons","protons","neutrons","neutrinos");
+        }
+    }
+}
