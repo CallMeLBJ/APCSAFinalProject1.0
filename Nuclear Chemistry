@@ -1,4 +1,18 @@
-public class NuclearChemistery extends Chemistry
+public class NuclearChemistry extends Chemistry
 {
-   
+    public NuclearChemistry(){
+        super();
+    }
+    public void makeQuestion(){
+        int rando = (int)(Math.random()*3);
+        if(rando==0){
+            this.printChemQuestions("The radioactive isotope I-131 is used for what?","medical diagnosis","geologic dating","controlling fission reactions","controlling speeds of neutrons");
+        }
+        if(rando==1){
+            this.printChemQuestions("Given the reaction: 27/13Al + 4/2He ----> 30/15P + 1/0n  This reaction is best described as what?","artificial transmutation","beta decay","fission","fusion");
+        }
+        if(rando==2){
+            this.printChemQuestions("In a nuclear reactor, boron cadmium are commonly used in what?","control rods","fuels","moderators","coolants");
+        }
+    }
 }
