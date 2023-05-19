@@ -1,5 +1,18 @@
 public class ThePeriodicTable extends Chemistry
 {
-
+    public ThePeriodicTable(){
+        super();
+    }
+    public void makeQuestion(){
+        int rando = (int)(Math.random()*3);
+        if(rando==0){
+            this.printChemQuestions("Which of the following atoms has the smallest covelent atomic radius?","F","Li","Be","C");
+        }
+        if(rando==1){
+            this.printChemQuestions("Which Group 15 element has the most metallic character?","Bi","N","As","P");
+        }
+        if(rando==2){
+            this.printChemQuestions("The arrangement of the elements in the present Periodic Table is based on atomic what?","number","mass","radius","density");
+        }
+    }
 }
-
