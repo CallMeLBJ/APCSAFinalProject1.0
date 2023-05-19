@@ -1,0 +1,18 @@
+public class KineticsEquilibrium extends Chemistry
+{
+  public KineticsEquilibrium(){
+        super();
+    }
+    public void makeQuestion(){
+        int rando = (int)(Math.random()*3);
+        if(rando==0){
+              this.printChemQuestions("What type of energy is stored in a chemical bond" , "potential energy", "kinetic energy","nuclear energy","activation energy");
+     }
+        if(rando==1){
+           this.printChemQuestions("The energy needed to start a reaction is?","activation energy","potential energy ","kinetic energy","nuclear energy");
+     }
+        if(rando==2){
+          this.printChemQuestions("An effective collosion between reactant particles requires the particles to have the proper", "energy and orientation","charge and mass","charge and orientation","energy and mass");
+        }
+    }
+}
