@@ -9,7 +9,7 @@ public class OrganicChemistry extends Chemistry
               this.printChemQuestions("Which of the following  hydrocarbons has the highest normal boiling point?" , "pentene", "ethene","methene","propene");
      }
         if(rando==1){
-           this.printChemQuestions("What is the pH of a 0.001 M solution of HCL?","3","1","7","11");
+           this.printChemQuestions("What is the structural formula for ethene?","C2H4","C2H2","C3H8","CH5");
      }
         if(rando==2){
          this.printChemQuestions("Which of the following compounds has the lowest normal boiling point?", "methane","ethane","butane","propane");
