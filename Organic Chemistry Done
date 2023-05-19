@@ -12,7 +12,7 @@ public class OrganicChemistry extends Chemistry
            this.printChemQuestions("What is the pH of a 0.001 M solution of HCL?","3","1","7","11");
      }
         if(rando==2){
-         this.printChemQuestions("Acording to the Bronstead-Lowry Theory, an acid is", "a proton donor","an electron donor","a proton acceptor","an electron acceptor");
+         this.printChemQuestions("Which of the following compounds has the lowest normal boiling point?", "methane","ethane","butane","propane");
         }
     }
 }
