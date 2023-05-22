@@ -1,6 +1,18 @@
-
 public class ChemicalBonds extends Chemistry
 {
-    
-    
+    public ChemicalBonds(){
+        super();
+    }
+    public void makeQuestion(){
+        int rando = (int)(Math.random()*3);
+        if(rando==0){
+            this.printChemQuestions("What type of bond is present in diamonds?","covalent","ionic","electrovalent","metallic");
+        }
+        if(rando==1){
+            this.printChemQuestions("Which of the following compounds has the least ionic character?","NO","KI","HCl","MgS");
+        }
+        if(rando==2){
+            this.printChemQuestions("Which molecule contains a nonpolar covalent bond?","F2","CO2","NH3","HCl");
+        }
+    }
 }
