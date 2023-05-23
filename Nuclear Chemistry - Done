@@ -12,7 +12,7 @@ public class NuclearChemistry extends Chemistry
             this.printChemQuestions("Given the reaction: 27/13Al + 4/2He ----> 30/15P + 1/0n  This reaction is best described as what?","artificial transmutation","beta decay","fission","fusion");
         }
         if(rando==2){
-            this.printChemQuestions("In a nuclear reactor, boron cadmium are commonly used in what?","control rods","fuels","moderators","coolants");
+            this.printChemQuestions("In a nuclear reactor, boron and cadmium are commonly used in what?","control rods","fuels","moderators","coolants");
         }
     }
 }
