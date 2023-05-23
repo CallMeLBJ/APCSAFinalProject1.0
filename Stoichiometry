@@ -1,5 +1,18 @@
 public class Stoichiometry extends Chemistry
 {
-
+    public Stoichiometry(){
+        super();
+    }
+    public void makeQuestion(){
+        int rando = (int)(Math.random()*3);
+        if(rando==0){
+            this.printChemQuestions("Given the reaction:  2SO2(g) + O2(g) ---->  2SO3(g)   What is the total number liters of SO3 produced when 32.0 liters of SO2 reacts completely?", "32.0L","11.2L","40.0L","44.8");
+        }
+        if(rando==1){
+            this.printChemQuestions("What is the total number of atoms in 1.0 mole of CO2?","18*10^23","1.5*10^23","12*10^23","3*10^23");
+        }
+        if(rando==2){
+            this.printChemQuestions("The volume of 16.0 grams of SO2(g) at STP is closest to what?", "5.60L","11.2L","22.4L","44.8L");
+        }
+    }
 }
-
