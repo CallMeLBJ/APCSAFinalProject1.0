@@ -1,4 +1,18 @@
 public class Solutions extends Chemistry
 {
-   
+  public Solutions(){
+        super();
+    }
+    public void makeQuestion(){
+        int rando = (int)(Math.random()*3);
+        if(rando==0){
+              this.printChemQuestions("Which of the following represents a mixture?" , "NaCl(aq)", "NaCl(s)","NH3(g)","NH3(l)");
+     }
+        if(rando==1){
+           this.printChemQuestions("Which formula represents a type of mixture","NaCl(aq)","NaCl(l)","H20(L)","H20(s)");
+     }
+        if(rando==2){
+          this.printChemQuestions("What material is a mixture?", "air","water","methane","magnesium");
+        }
+    }
 }
