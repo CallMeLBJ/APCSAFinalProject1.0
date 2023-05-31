@@ -1,14 +1,14 @@
 import java.util.*;
 public class ChemistryRunner{
     public static void main (String[] args){
+        System.out.println("Do you want to study for Chemstry? Enter 0 for no, 1 for yes");
+        Scanner console = new Scanner(System.in);
+        int num = console.nextInt();
+        if(num==0){
+            return;
+        }
         boolean what = true;
         while(what){   
-            System.out.println("Do you want to study for chemstry? Enter 0 for no, 1 for yes");
-            Scanner console = new Scanner(System.in);
-            int num = console.nextInt();
-            if(num==0){
-                return;
-            }
             System.out.println("What unit do you want to study?");
             System.out.println("0 - Matter and Energy");
             System.out.println("1 - Atomic Concepts");
@@ -22,28 +22,115 @@ public class ChemistryRunner{
             System.out.println("9 - ReDox");
             System.out.println("10 - Organic Chemistry");
             int num0 = console.nextInt();
-            if(num==0){
-                
+            if(num0==0){
+                System.out.println("Here is a question:");
+                MatterAndEnergy obj0 = new MatterAndEnergy();
+                obj0.makeQuestion();
+                System.out.println("Do you want to study Chemistry again? Enter 0 for no, 1 for yes");
+                int num1 = console.nextInt();
+                if(num1==0){
+                    what = false;
+                }
             }
-            if(num==1){
+            if(num0==1){
+                System.out.println("Here is a question:");
+                AtomicConcepts obj1 = new AtomicConcepts();
+                obj1.makeQuestion();
+                System.out.println("Do you want to study Chemistry again? Enter 0 for no, 1 for yes");
+                int num1 = console.nextInt();
+                if(num1==0){
+                    what = false;
+                }
             }
-            if(num==2){
+            if(num0==2){
+                System.out.println("Here is a question:");
+                ThePeriodicTable obj2 = new ThePeriodicTable();
+                obj2.makeQuestion();
+                System.out.println("Do you want to study Chemistry again? Enter 0 for no, 1 for yes");
+                int num1 = console.nextInt();
+                if(num1==0){
+                    what = false;
+                }
             }
-            if(num==3){
+            if(num0==3){
+                System.out.println("Here is a question:");
+                NuclearChemistry obj3 = new NuclearChemistry();
+                obj3.makeQuestion();
+                System.out.println("Do you want to study Chemistry again? Enter 0 for no, 1 for yes");
+                int num1 = console.nextInt();
+                if(num1==0){
+                    what = false;
+                }
             }
-            if(num==4){
+            if(num0==4){
+                System.out.println("Here is a question:");
+                ChemicalBonds obj4 = new ChemicalBonds();
+                obj4.makeQuestion();
+                System.out.println("Do you want to study Chemistry again? Enter 0 for no, 1 for yes");
+                int num1 = console.nextInt();
+                if(num1==0){
+                    what = false;
+                }
             }
-            if(num==5){
+            if(num0==5){
+                System.out.println("Here is a question:");
+                Stoichiometry obj5 = new Stoichiometry();
+                obj5.makeQuestion();
+                System.out.println("Do you want to study Chemistry again? Enter 0 for no, 1 for yes");
+                int num1 = console.nextInt();
+                if(num1==0){
+                    what = false;
+                }
             }
-            if(num==6){
+            if(num0==6){
+                System.out.println("Here is a question:");
+                Solutions obj6 = new Solutions();
+                obj6.makeQuestion();
+                System.out.println("Do you want to study Chemistry again? Enter 0 for no, 1 for yes");
+                int num1 = console.nextInt();
+                if(num1==0){
+                    what = false;
+                }
             }
-            if(num==7){
+            if(num0==7){
+                System.out.println("Here is a question:");
+                KineticsAndEquilibrium obj7 = new KineticsAndEquilibrium();
+                obj7.makeQuestion();
+                System.out.println("Do you want to study Chemistry again? Enter 0 for no, 1 for yes");
+                int num1 = console.nextInt();
+                if(num1==0){
+                    what = false;
+                }
             }
-            if(num==8){
+            if(num0==8){
+                System.out.println("Here is a question:");
+                AcidsAndBases obj8 = new AcidsAndBases();
+                obj8.makeQuestion();
+                System.out.println("Do you want to study Chemistry again? Enter 0 for no, 1 for yes");
+                int num1 = console.nextInt();
+                if(num1==0){
+                    what = false;
+                }
             }
-            if(num==9){
+            if(num0==9){
+                System.out.println("Here is a question:");
+                Redox obj9 = new Redox();
+                obj9.makeQuestion();
+                System.out.println("Do you want to study Chemistry again? Enter 0 for no, 1 for yes");
+                int num1 = console.nextInt();
+                if(num1==0){
+                    what = false;
+                }
             }
-            if(num==10){
+            if(num0==10){
+                System.out.println("Here is a question:");
+                OrganicChemistry obj10 = new OrganicChemistry();
+                obj10.makeQuestion();
+                System.out.println("Do you want to study Chemistry again? Enter 0 for no, 1 for yes");
+                int num1 = console.nextInt();
+                if(num1==0){
+                    what = false;
+                }
             }
         }
     }
