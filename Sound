@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 
 public class KahootMusic{
     public static void main (String[] args){
-        String filepath = "C:\\Users\\Shivum\\Downloads\\lobby-classic-game.wav";
+        String filepath = "C:\Users\ozenis\Downloads\Jeopardy.wav";
         PlayMusic(filepath);
         JOptionPane.showMessageDialog(null,"Press OK to stop playing");
     }
